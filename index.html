@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JobMate -Inspired Job Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">JobMate</div>
+      <div
+        class="hamburger"
+        aria-label="Toggle menu"
+        role="button"
+        tabindex="0"
+      >
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <a href="#">Jobs</a>
+        <a href="#">About</a>
+        <a href="#">How it Works</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Anything’s possible when you have the Connection</h1>
+        <p>
+          Discover in-demand jobs, showcase your skills, and connect with
+          employers ready to hire — everything you need to launch your career.
+        </p>
+        <div class="btn-group">
+          <a href="#" class="cta-button">Find a Job</a>
+          <a href="#" class="cta-button secondary">Hire Talent</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features">
+      <h2>Benefits of JobMate</h2>
+      <article class="feature">
+        <h3>Easy Job Search</h3>
+        <p>Our simple interface helps you find the right job in minutes.</p>
+      </article>
+      <article class="feature">
+        <h3>Trusted Employers</h3>
+        <p>Work with verified companies that respect your skills and time.</p>
+      </article>
+      <article class="feature">
+        <h3>Career Growth</h3>
+        <p>Access training and resources to help advance your career.</p>
+      </article>
+    </section>
+
+    <!-- hiring section -->
+
+    <section class="hiring-section">
+      <h2 class="scroll-heading">Hiring Trends and Insights</h2>
+
+      <div class="scroll-buttons">
+        <button onclick="scrollLeft()">&#8678;</button>
+        <button onclick="scrollRight()">&#8680;</button>
+      </div>
+
+      <div class="scroll-container" id="scrollCards">
+        <div class="card">
+          <img
+            src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-2151833739-sg25?$Rectangle2-Large-1x$&fmt=webp-alpha"
+            alt="Salary Guide"
+          />
+          <div class="card-body">
+            <h3>2025 Salary Guide</h3>
+            <p>Explore salary data for 450+ roles across markets.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-2350002243-no-text?$Rectangle2-Large-1x$&fmt=webp-alpha"
+            alt="Jobs in Demand"
+          />
+          <div class="card-body">
+            <h3>Jobs in Demand</h3>
+            <p>Check out our Skilled Talent report for 2025.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
+            alt="Tech Gaps"
+          />
+          <div class="card-body">
+            <h3>Navigate Tech Gaps</h3>
+            <p>Build strong tech teams for your priorities.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-MGen-Book-001?$Rectangle2-Large-1x$&fmt=webp-alpha"
+            alt="Workforce Report"
+          />
+          <div class="card-body">
+            <h3>Multigenerational Workforce</h3>
+            <p>Motivate and retain professionals across age groups.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- new section -->
+    <section class="split-section">
+      <div class="background-svg">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <defs>
+            <clipPath id="curveRight" clipPathUnits="objectBoundingBox">
+              <path d="M1,0 H0.666 C0.441,0.039,0.218,0.365,0,1 H1 V0"></path>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="split-container">
+        <div class="split-image">
+          <img
+            src="https://s7d9.scene7.com/is/image/roberthalfintl/rt1-1893582901?$Rectangle1-Large-1x$&fmt=webp-alpha"
+            alt="Business professional"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="split-content">
+          <h2>Build a Strong Team</h2>
+          <p>
+            Access skilled candidates and insights tailored to your hiring
+            needs.
+          </p>
+
+          <ul>
+            <li>Vetted professionals across industries</li>
+            <li>Fast placement with local support</li>
+            <li>Expert guidance from our talent experts</li>
+          </ul>
+
+          <div class="cta-buttons">
+            <a href="#" class="btn primary">Preview candidates</a>
+            <a href="#" class="btn secondary">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="page-footer" class="page-footer">
+      <div class="container">
+        <div class="footer-campaigns">
+          <a href="request-call-back" class="footer_campaign">
+            <i class="fa fa-users"></i>
+            <h3>Are you looking to hire?</h3>
+            <p>Our consultants are here to help</p>
+            <span class="btn">Request a call back</span>
+          </a>
+
+          <a href="/tab.html" class="footer_campaign">
+            <i class="fa fa-phone"></i>
+            <h3>Contact us</h3>
+            <p>Find your JobMate office.</p>
+            <span class="btn">Our offices</span>
+          </a>
+
+          <a href="/check.html" class="footer_campaign">
+            <i class="fa fa-briefcase"></i>
+            <h3>Looking for a job?</h3>
+            <p>Take a look at our current roles</p>
+            <span class="btn">Job search</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- consoltig section -->
+
+    <section class="content-section">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="text-content">
+            <h2>Consulting solutions to drive business impact</h2>
+            <ul class="checklist">
+              <li>Develop a clear vision and strategy</li>
+              <li>
+                Enhance business performance with critical technologies and
+                processes
+              </li>
+              <li>Implement a plan or manage operations</li>
+            </ul>
+            <div class="cta-buttons">
+              <a href="/us/en/consulting#form" class="btn btn-primary"
+                >Find your consulting solution</a
+              >
+              <a href="/us/en/consulting" class="btn btn-secondary"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="image-content">
+            <img
+              src="https://s7d9.scene7.com/is/image/roberthalfintl/rt1-1895357617?$Rectangle1-Large-1x$&fmt=webp-alpha"
+              alt="Consulting Image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- secondray section -->
+    <section class="custom-section secondary-light">
+      <div class="background-svg">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <defs>
+            <clipPath id="curveRight" clipPathUnits="objectBoundingBox">
+              <path d="M1,0 H0.666 C0.441,0.039,0.218,0.365,0,1 H1 V0"></path>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="background-curve">
+        <svg
+          viewBox="0 0 1440 120"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <clipPath
+              id="background-curve-right"
+              clipPathUnits="objectBoundingBox"
+            >
+              <path d="M1,0 H0.666 C0.441,0.039,0.218,0.365,0,1 H1 V0"></path>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="container content-split">
+        <div class="media">
+          <img
+            src="https://s7d9.scene7.com/is/image/roberthalfintl/rt1-1029092947?$Rectangle1-Large-1x$&fmt=webp-alpha"
+            alt="People Working"
+            loading="lazy"
+          />
+        </div>
+        <div class="text">
+          <h2>Find Your Ideal Role Faster</h2>
+          <p>
+            We help you match with top employers in your field, offering
+            personalized support at every step.
+          </p>
+          <ul>
+            <li>Curated job matches</li>
+            <li>Dedicated recruiter support</li>
+            <li>Resume & interview prep</li>
+          </ul>
+          <div class="cta-buttons">
+            <a href="#" class="btn primary">Get job matches</a>
+            <a href="#" class="btn secondary">Learn more</a>
+          </div>
+          <small class="legal"
+            >Terms and conditions apply. Services may vary by location.</small
+          >
+        </div>
+      </div>
+      <!-- <blockquote class="testimonial">
+        “JobMate helped me land my dream job faster than I ever imagined!”
+        <strong>– A Happy User</strong>
+      </blockquote> -->
+    </section>
+
+    <!-- tabed conten section -->
+
+    <section class="tabbed-content-section">
+      <div class="container">
+        <div class="tabbed-content-block">
+          <h2>Add specialized talent across your organization</h2>
+
+          <div class="tabs-nav-container">
+            <div class="tabs-nav">
+              <button class="tab-btn active" data-tab="finance">
+                Finance & Accounting
+              </button>
+              <button class="tab-btn" data-tab="technology">Technology</button>
+              <button class="tab-btn" data-tab="marketing">
+                Marketing & Creative
+              </button>
+              <button class="tab-btn" data-tab="legal">Legal</button>
+              <button class="tab-btn" data-tab="admin">Admin & Support</button>
+            </div>
+          </div>
+
+          <!-- Finance & Accounting Tab -->
+          <div id="finance" class="tab-content active">
+            <div class="tab-content-inner">
+              <div class="tab-text">
+                <p>
+                  From accountants to CFOs, we'll bring you top candidates with
+                  in-demand skills and experience and help manage the hiring
+                  process for you.
+                </p>
+
+                <div class="content-list">
+                  <h3>Trending job titles</h3>
+                  <div class="content-list-items">
+                    <div class="content-list-item">
+                      <a href="#">Controller</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Senior accountant</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Senior financial analyst</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Internal auditor</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Accounts payable/receivable specialist</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Bookkeeper</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="cta-link"
+                  >Learn more about our Accounting and Finance hiring
+                  solutions</a
+                >
+              </div>
+
+              <div class="tab-image">
+                <img
+                  src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
+                  alt="Finance professionals working"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Technology Tab -->
+          <div id="technology" class="tab-content">
+            <div class="tab-content-inner">
+              <div class="tab-text">
+                <p>
+                  From cybersecurity professionals to developers, we'll bring
+                  you top candidates with in-demand skills and experience and
+                  help manage the hiring process for you.
+                </p>
+
+                <div class="content-list">
+                  <h3>Trending job titles</h3>
+                  <div class="content-list-items">
+                    <div class="content-list-item">
+                      <a href="#">Software developer</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Data analyst</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Systems analyst</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Product support specialist</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Network administrator</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Web developer</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="cta-link"
+                  >Learn more about our Technology hiring solutions</a
+                >
+              </div>
+
+              <div class="tab-image">
+                <img
+                  src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
+                  alt="Technology professionals working"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Marketing & Creative Tab -->
+          <div id="marketing" class="tab-content">
+            <div class="tab-content-inner">
+              <div class="tab-text">
+                <p>
+                  From copywriters to creative directors, we'll bring you top
+                  candidates with in-demand skills and experience and help
+                  manage the hiring process for you.
+                </p>
+
+                <div class="content-list">
+                  <h3>Trending job titles</h3>
+                  <div class="content-list-items">
+                    <div class="content-list-item">
+                      <a href="#">Graphic designer</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Copywriter</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Production artist</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Digital marketing specialist</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">UX designer</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Marketing manager</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="cta-link"
+                  >Learn more about our Marketing and Creative hiring
+                  solutions</a
+                >
+              </div>
+
+              <div class="tab-image">
+                <img
+                  src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
+                  alt="Creative team working"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Legal Tab -->
+          <div id="legal" class="tab-content">
+            <div class="tab-content-inner">
+              <div class="tab-text">
+                <p>
+                  From lawyers to paralegals, we'll bring you top candidates
+                  with in-demand skills and experience and help manage the
+                  hiring process for you.
+                </p>
+                <p class="disclaimer">
+                  Note: We are not a law firm and do not provide legal
+                  representation.
+                </p>
+
+                <div class="content-list">
+                  <h3>Trending job titles</h3>
+                  <div class="content-list-items">
+                    <div class="content-list-item"><a href="#">Lawyer</a></div>
+                    <div class="content-list-item">
+                      <a href="#">Paralegal</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Legal assistant</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">In-house counsel</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Contract administrator</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Legal secretary</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="cta-link"
+                  >Learn more about our Legal hiring solutions</a
+                >
+              </div>
+
+              <div class="tab-image">
+                <img
+                  src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
+                  alt="Legal professionals working"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Admin & Customer Support Tab -->
+          <div id="admin" class="tab-content">
+            <div class="tab-content-inner">
+              <div class="tab-text">
+                <p>
+                  From office managers to customer service professionals, we'll
+                  bring you top candidates with in-demand skills and experience
+                  and help manage the hiring process for you.
+                </p>
+
+                <div class="content-list">
+                  <h3>Trending job titles</h3>
+                  <div class="content-list-items">
+                    <div class="content-list-item">
+                      <a href="#">Administrative assistant</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Executive assistant</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Customer experience representative</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Receptionist</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Office specialist</a>
+                    </div>
+                    <div class="content-list-item">
+                      <a href="#">Data entry specialist</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="cta-link"
+                  >More about our Admin and Customer Support hiring solutions</a
+                >
+              </div>
+
+              <div class="tab-image">
+                <img
+                  src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
+                  alt="Administrative professionals working"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 JobMate, Inc. All rights reserved.</footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
