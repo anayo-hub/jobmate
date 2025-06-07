@@ -1,3 +1,4 @@
+// hambugerr code
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector("nav");
 
@@ -24,7 +25,9 @@ nav.querySelectorAll("a").forEach((link) => {
   });
 });
 
-// Add this in your existing <script> tag or in a new script block
+// end of hambuger code
+
+// Header Code
 
 const header = document.querySelector("header");
 const logo = document.querySelector(".logo");
@@ -35,10 +38,10 @@ window.addEventListener("scroll", () => {
     header.classList.add("fixed", "scrolled");
     header.classList.remove("transparent");
 
-    logo.style.color = "#d6001c"; // or a darker color on scroll if you prefer
+    logo.style.color = "#0d6efd"; // or a darker color on scroll if you prefer
 
     navLinks.forEach((link) => {
-      link.style.color = "#333"; // darker text on scroll
+      link.style.color = "#0d6efd"; // darker text on scroll
     });
 
     document.body.style.paddingTop = `${header.offsetHeight}px`;
@@ -46,10 +49,10 @@ window.addEventListener("scroll", () => {
     header.classList.remove("fixed", "scrolled");
     header.classList.add("transparent");
 
-    logo.style.color = "#fff"; // light text at top
+    logo.style.color = "#0d6efd"; // light text at top
 
     navLinks.forEach((link) => {
-      link.style.color = "#fff";
+      link.style.color = "#0d6efd";
     });
 
     document.body.style.paddingTop = "0";
