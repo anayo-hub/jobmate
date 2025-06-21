@@ -9,6 +9,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
@@ -18,6 +22,7 @@
   <body>
     <header>
       <div class="logo">JobMate</div>
+
       <div
         class="hamburger"
         aria-label="Toggle menu"
@@ -29,47 +34,60 @@
         <div></div>
       </div>
       <nav>
-        <a href="#">Jobs</a>
-        <a href="#">About</a>
-        <a href="#">How it Works</a>
-        <a href="#" class="contact-btn">Contact</a>
+        <!-- <a href="jobs.html">Jobs</a> -->
+        <a href="/how-it-works.html">How-it-Works</a>
+        <a href="about-us.html">About</a>
+        <a href="#" class="header-btn">Sign-in</a>
       </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero-section">
       <div class="hero-content">
-        <h1>Anything’s possible when you have the Connection</h1>
+        <h1>Serve smart. Connect with the PPA that needs you most.</h1>
         <p>
-          Discover in-demand jobs, showcase your skills, and connect with
-          employers ready to hire — everything you need to launch your career.
+          Find your ideal Place of Primary Assignment (PPA), and connect with
+          organizations eager to work with NYSC corps members
         </p>
+
         <div class="btn-group">
-          <a href="#" class="cta-button">Find a Job</a>
-          <a href="#" class="cta-button secondary">Hire Talent</a>
+          <a href="#" class="cta-button btn-primary">Find my PPA</a>
+          <a href="#" class="cta-button btn-secondary">Hire a KOPA</a>
         </div>
       </div>
     </section>
 
-    <section class="section features">
-      <h2>Benefits of JobMate</h2>
+    <section class="section-wu">
+      <h2>Why Use JobMate for Your NYSC PPA?</h2>
+
       <article class="feature">
-        <h3>Easy Job Search</h3>
-        <p>Our simple interface helps you find the right job in minutes.</p>
+        <h3>Stress-Free PPA Matching</h3>
+        <p>
+          We connect you with suitable places of primary assignment based on
+          your location, skills, and interests — no more wandering around.
+        </p>
       </article>
+
       <article class="feature">
-        <h3>Trusted Employers</h3>
-        <p>Work with verified companies that respect your skills and time.</p>
+        <h3>Verified Organizations</h3>
+        <p>
+          Be matched with trusted schools, companies, NGOs, and government
+          agencies that are NYSC-friendly and ready to support your service
+          year.
+        </p>
       </article>
+
       <article class="feature">
-        <h3>Career Growth</h3>
-        <p>Access training and resources to help advance your career.</p>
+        <h3>Grow While You Serve</h3>
+        <p>
+          Get access to opportunities that build your resume, grow your network,
+          and prepare you for life after NYSC.
+        </p>
       </article>
     </section>
 
     <!-- hiring section -->
-
     <section class="hiring-section">
-      <h2 class="scroll-heading">Hiring Trends and Insights</h2>
+      <h2 class="scroll-heading">Trends and Insights for NYSC Members</h2>
 
       <div class="scroll-buttons">
         <button onclick="scrollLeft()">&#8678;</button>
@@ -80,51 +98,56 @@
         <div class="card">
           <img
             src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-2151833739-sg25?$Rectangle2-Large-1x$&fmt=webp-alpha"
-            alt="Salary Guide"
+            alt="PPA Salary Guide"
           />
           <div class="card-body">
-            <h3>2025 Salary Guide</h3>
-            <p>Explore salary data for 450+ roles across markets.</p>
+            <h3>2025 PPA Salary Guide</h3>
+            <p>
+              See what top organizations offer corps members in different
+              sectors.
+            </p>
           </div>
         </div>
 
         <div class="card">
           <img
             src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-2350002243-no-text?$Rectangle2-Large-1x$&fmt=webp-alpha"
-            alt="Jobs in Demand"
+            alt="Popular Jobs"
           />
           <div class="card-body">
-            <h3>Jobs in Demand</h3>
-            <p>Check out our Skilled Talent report for 2025.</p>
+            <h3>Most Wanted Roles</h3>
+            <p>Discover the most in-demand PPA positions for NYSC in 2025.</p>
           </div>
         </div>
 
         <div class="card">
           <img
             src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
-            alt="Tech Gaps"
+            alt="Tech Opportunities"
           />
           <div class="card-body">
-            <h3>Navigate Tech Gaps</h3>
-            <p>Build strong tech teams for your priorities.</p>
+            <h3>Tech Gaps in PPA</h3>
+            <p>Explore growing demand for corps members with tech skills.</p>
           </div>
         </div>
 
         <div class="card">
           <img
             src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-MGen-Book-001?$Rectangle2-Large-1x$&fmt=webp-alpha"
-            alt="Workforce Report"
+            alt="Life After NYSC"
           />
           <div class="card-body">
-            <h3>Multigenerational Workforce</h3>
-            <p>Motivate and retain professionals across age groups.</p>
+            <h3>Life After NYSC</h3>
+            <p>
+              Tips on transitioning from service year to full-time employment.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- new section -->
-    <section class="split-section">
+    <!-- Team section -->
+    <section class="team-section">
       <div class="background-svg">
         <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
           <defs>
@@ -135,225 +158,174 @@
         </svg>
       </div>
 
-      <div class="split-container">
-        <div class="split-image">
+      <div class="team-container">
+        <div class="team-image">
           <img
             src="https://s7d9.scene7.com/is/image/roberthalfintl/rt1-1893582901?$Rectangle1-Large-1x$&fmt=webp-alpha"
-            alt="Business professional"
+            alt="Employer with NYSC corps member"
             loading="lazy"
           />
         </div>
 
-        <div class="split-content">
-          <h2>Build a Strong Team</h2>
+        <div class="team-content">
+          <h2>Host the Right Corps Members</h2>
           <p>
-            Access skilled candidates and insights tailored to your hiring
-            needs.
+            Get connected with passionate, qualified NYSC members ready to
+            contribute to your team.
           </p>
 
-          <ul>
-            <li>Vetted professionals across industries</li>
-            <li>Fast placement with local support</li>
-            <li>Expert guidance from our talent experts</li>
+          <ul class="checklist">
+            <li>Vetted corps members from diverse disciplines</li>
+            <li>Fast matching and support from our team</li>
+            <li>Make real impact while building your workforce</li>
           </ul>
 
           <div class="cta-buttons">
-            <a href="#" class="btn primary">Preview candidates</a>
-            <a href="#" class="btn secondary">Learn more</a>
+            <a href="#" class="btn-primary">Browse Corps Profiles</a>
+            <a href="#" class="btn-secondary">Become a PPA</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- contact section -->
-    <section id="page-footer" class="page-footer">
+    <section id="contact-section" class="contact-section">
       <div class="container">
-        <div class="footer-campaigns">
-          <a href="request-call-back" class="footer_campaign">
+        <div class="contact-campaigns">
+          <a href="/request-call-back" class="contact_campaign">
             <i class="fa fa-users"></i>
-            <h3>Are you looking to hire?</h3>
-            <p>Our consultants are here to help</p>
+            <h3>Want to Accept Corps Members?</h3>
+            <p>Our team is ready to help you find the right match.</p>
             <span class="btn">Request a call back</span>
           </a>
 
-          <a href="/tab.html" class="footer_campaign">
+          <a href="/tab.html" class="contact_campaign">
             <i class="fa fa-phone"></i>
-            <h3>Contact us</h3>
-            <p>Find your JobMate office.</p>
+            <h3>Need Assistance?</h3>
+            <p>Reach out to us or find our JobMate contact point.</p>
             <span class="btn">Our offices</span>
           </a>
 
-          <a href="/check.html" class="footer_campaign">
+          <a href="/check.html" class="contact_campaign">
             <i class="fa fa-briefcase"></i>
-            <h3>Looking for a job?</h3>
-            <p>Take a look at our current roles</p>
-            <span class="btn">Job search</span>
+            <h3>Are You a Corps Member?</h3>
+            <p>Browse available PPAs and submit your profile.</p>
+            <span class="btn">Find a PPA</span>
           </a>
         </div>
       </div>
     </section>
+
     <!-- consoltig section -->
 
-    <section class="content-section">
-      <div class="container">
-        <div class="content-wrapper">
-          <div class="text-content">
-            <h2>Consulting solutions to drive business impact</h2>
-            <ul class="checklist">
-              <li>Develop a clear vision and strategy</li>
-              <li>
-                Enhance business performance with critical technologies and
-                processes
-              </li>
-              <li>Implement a plan or manage operations</li>
-            </ul>
-            <div class="cta-buttons">
-              <a href="/us/en/consulting#form" class="btn btn-primary"
-                >Find your consulting solution</a
-              >
-              <a href="/us/en/consulting" class="btn btn-secondary"
-                >Learn more</a
-              >
-            </div>
+    <section class="consult-section">
+      <div class="consult-wrapper">
+        <div class="consult-text">
+          <h2>Strategic NYSC Placement That Benefits Your Organization</h2>
+          <ul class="checklist">
+            <li>Get corps members aligned with your mission and goals</li>
+            <li>Boost productivity with fresh talent and new perspectives</li>
+            <li>Let us handle the vetting, matching, and onboarding</li>
+          </ul>
+          <div class="cta-buttons">
+            <a href="/request-call-back" class="btn btn-primary">
+              Connect With Our Placement Team
+            </a>
+            <a href="/become-a-ppa" class="btn btn-secondary">
+              Become a Recognized PPA
+            </a>
           </div>
-          <div class="image-content">
-            <img
-              src="https://s7d9.scene7.com/is/image/roberthalfintl/rt1-1895357617?$Rectangle1-Large-1x$&fmt=webp-alpha"
-              alt="Consulting Image"
-              loading="lazy"
-            />
-          </div>
+        </div>
+        <div class="consult-image">
+          <img src="copa_1.webp" alt="NYSC Placement" loading="lazy" />
         </div>
       </div>
     </section>
-
-    <!-- secondray section -->
-    <section class="custom-section secondary-light">
-      <div class="background-svg">
-        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-          <defs>
-            <clipPath id="curveRight" clipPathUnits="objectBoundingBox">
-              <path d="M1,0 H0.666 C0.441,0.039,0.218,0.365,0,1 H1 V0"></path>
-            </clipPath>
-          </defs>
-        </svg>
-      </div>
-      <div class="background-curve">
-        <svg
-          viewBox="0 0 1440 120"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <clipPath
-              id="background-curve-right"
-              clipPathUnits="objectBoundingBox"
-            >
-              <path d="M1,0 H0.666 C0.441,0.039,0.218,0.365,0,1 H1 V0"></path>
-            </clipPath>
-          </defs>
-        </svg>
-      </div>
-
-      <div class="container content-split">
+    <!-- Secondary Section -->
+    <section class="custom-section">
+      <div class="content-team">
         <div class="media">
           <img
             src="https://s7d9.scene7.com/is/image/roberthalfintl/rt1-1029092947?$Rectangle1-Large-1x$&fmt=webp-alpha"
-            alt="People Working"
+            alt="Corps members in service"
             loading="lazy"
           />
         </div>
         <div class="text">
-          <h2>Find Your Ideal Role Faster</h2>
+          <h2>Serve Where You're Needed Most</h2>
           <p>
-            We help you match with top employers in your field, offering
-            personalized support at every step.
+            Whether you're posted in a city or rural community, we help you find
+            a Place of Primary Assignment (PPA) that values your contribution.
           </p>
-          <ul>
-            <li>Curated job matches</li>
-            <li>Dedicated recruiter support</li>
-            <li>Resume & interview prep</li>
+          <ul class="checklist">
+            <li>Smart PPA matching across sectors</li>
+            <li>Support with letters, documentation, and relocation</li>
+            <li>Stay informed with service-related resources</li>
           </ul>
           <div class="cta-buttons">
-            <a href="#" class="btn primary">Get job matches</a>
-            <a href="#" class="btn secondary">Learn more</a>
+            <a href="#" class="btn-primary">Start Matching</a>
+            <a href="#" class="btn-secondary">Learn More</a>
           </div>
-          <small class="legal"
-            >Terms and conditions apply. Services may vary by location.</small
-          >
+          <small class="legal">
+            Services vary by location and availability. Terms apply.
+          </small>
         </div>
       </div>
-      <!-- <blockquote class="testimonial">
-        “JobMate helped me land my dream job faster than I ever imagined!”
-        <strong>– A Happy User</strong>
-      </blockquote> -->
     </section>
 
-    <!-- tabed conten section -->
-
+    <!-- Tabbed Content Section -->
     <section class="tabbed-content-section">
       <div class="container">
         <div class="tabbed-content-block">
-          <h2>Add specialized talent across your organization</h2>
+          <h2>Available NYSC Corps Members by Discipline</h2>
 
           <div class="tabs-nav-container">
             <div class="tabs-nav">
               <button class="tab-btn active" data-tab="finance">
-                Finance & Accounting
+                Accounting & Finance
               </button>
               <button class="tab-btn" data-tab="technology">Technology</button>
-              <button class="tab-btn" data-tab="marketing">
-                Marketing & Creative
+              <button class="tab-btn" data-tab="education">Education</button>
+              <button class="tab-btn" data-tab="health">
+                Health & Life Sciences
               </button>
-              <button class="tab-btn" data-tab="legal">Legal</button>
               <button class="tab-btn" data-tab="admin">Admin & Support</button>
             </div>
           </div>
 
-          <!-- Finance & Accounting Tab -->
+          <!-- Accounting & Finance Tab -->
           <div id="finance" class="tab-content active">
             <div class="tab-content-inner">
               <div class="tab-text">
                 <p>
-                  From accountants to CFOs, we'll bring you top candidates with
-                  in-demand skills and experience and help manage the hiring
-                  process for you.
+                  Find NYSC members trained in Accounting, Banking & Finance —
+                  ready to serve with integrity and skill.
                 </p>
-
                 <div class="content-list">
-                  <h3>Trending job titles</h3>
+                  <h3>Available Corps Roles</h3>
                   <div class="content-list-items">
                     <div class="content-list-item">
-                      <a href="#">Controller</a>
+                      <a href="#">Account Assistant</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Senior accountant</a>
+                      <a href="#">Bookkeeping Intern</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Senior financial analyst</a>
+                      <a href="#">Audit Support</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Internal auditor</a>
-                    </div>
-                    <div class="content-list-item">
-                      <a href="#">Accounts payable/receivable specialist</a>
-                    </div>
-                    <div class="content-list-item">
-                      <a href="#">Bookkeeper</a>
+                      <a href="#">Finance Admin</a>
                     </div>
                   </div>
                 </div>
-
                 <a href="#" class="cta-link"
-                  >Learn more about our Accounting and Finance hiring
-                  solutions</a
+                  >Browse available finance corps members</a
                 >
               </div>
-
               <div class="tab-image">
                 <img
                   src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
-                  alt="Finance professionals working"
+                  alt="Finance professionals"
                 />
               </div>
             </div>
@@ -364,191 +336,143 @@
             <div class="tab-content-inner">
               <div class="tab-text">
                 <p>
-                  From cybersecurity professionals to developers, we'll bring
-                  you top candidates with in-demand skills and experience and
-                  help manage the hiring process for you.
+                  Looking for corps members with IT, software, or technical
+                  support skills? We’ve got you covered.
                 </p>
-
                 <div class="content-list">
-                  <h3>Trending job titles</h3>
+                  <h3>Available Corps Roles</h3>
                   <div class="content-list-items">
                     <div class="content-list-item">
-                      <a href="#">Software developer</a>
+                      <a href="#">Frontend Developer</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Data analyst</a>
+                      <a href="#">Tech Support Assistant</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Systems analyst</a>
+                      <a href="#">Database Intern</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Product support specialist</a>
-                    </div>
-                    <div class="content-list-item">
-                      <a href="#">Network administrator</a>
-                    </div>
-                    <div class="content-list-item">
-                      <a href="#">Web developer</a>
+                      <a href="#">UI/UX Intern</a>
                     </div>
                   </div>
                 </div>
-
                 <a href="#" class="cta-link"
-                  >Learn more about our Technology hiring solutions</a
+                  >Browse available tech corps members</a
                 >
               </div>
-
               <div class="tab-image">
                 <img
                   src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
-                  alt="Technology professionals working"
+                  alt="Tech professionals"
                 />
               </div>
             </div>
           </div>
 
-          <!-- Marketing & Creative Tab -->
-          <div id="marketing" class="tab-content">
+          <!-- Education Tab -->
+          <div id="education" class="tab-content">
             <div class="tab-content-inner">
               <div class="tab-text">
                 <p>
-                  From copywriters to creative directors, we'll bring you top
-                  candidates with in-demand skills and experience and help
-                  manage the hiring process for you.
+                  We have passionate education graduates ready to serve in
+                  schools, community centers, and literacy programs.
                 </p>
-
                 <div class="content-list">
-                  <h3>Trending job titles</h3>
+                  <h3>Available Corps Roles</h3>
                   <div class="content-list-items">
                     <div class="content-list-item">
-                      <a href="#">Graphic designer</a>
+                      <a href="#">Subject Teacher</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Copywriter</a>
+                      <a href="#">Teaching Assistant</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Production artist</a>
+                      <a href="#">Classroom Support</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Digital marketing specialist</a>
-                    </div>
-                    <div class="content-list-item">
-                      <a href="#">UX designer</a>
-                    </div>
-                    <div class="content-list-item">
-                      <a href="#">Marketing manager</a>
+                      <a href="#">Adult Literacy Volunteer</a>
                     </div>
                   </div>
                 </div>
-
-                <a href="#" class="cta-link"
-                  >Learn more about our Marketing and Creative hiring
-                  solutions</a
-                >
+                <a href="#" class="cta-link">View corps members for schools</a>
               </div>
-
               <div class="tab-image">
                 <img
                   src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
-                  alt="Creative team working"
+                  alt="Teachers and students"
                 />
               </div>
             </div>
           </div>
 
-          <!-- Legal Tab -->
-          <div id="legal" class="tab-content">
+          <!-- Health Tab -->
+          <div id="health" class="tab-content">
             <div class="tab-content-inner">
               <div class="tab-text">
                 <p>
-                  From lawyers to paralegals, we'll bring you top candidates
-                  with in-demand skills and experience and help manage the
-                  hiring process for you.
+                  Corps members with medical, nursing, and public health
+                  backgrounds are available for community health outreach and
+                  clinical support.
                 </p>
-                <p class="disclaimer">
-                  Note: We are not a law firm and do not provide legal
-                  representation.
-                </p>
-
                 <div class="content-list">
-                  <h3>Trending job titles</h3>
+                  <h3>Available Corps Roles</h3>
                   <div class="content-list-items">
-                    <div class="content-list-item"><a href="#">Lawyer</a></div>
                     <div class="content-list-item">
-                      <a href="#">Paralegal</a>
+                      <a href="#">Medical Intern</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Legal assistant</a>
+                      <a href="#">Health Record Officer</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">In-house counsel</a>
+                      <a href="#">Public Health Educator</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Contract administrator</a>
-                    </div>
-                    <div class="content-list-item">
-                      <a href="#">Legal secretary</a>
+                      <a href="#">Clinic Assistant</a>
                     </div>
                   </div>
                 </div>
-
-                <a href="#" class="cta-link"
-                  >Learn more about our Legal hiring solutions</a
-                >
+                <a href="#" class="cta-link">Explore health corps members</a>
               </div>
-
               <div class="tab-image">
                 <img
                   src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
-                  alt="Legal professionals working"
+                  alt="Health workers"
                 />
               </div>
             </div>
           </div>
 
-          <!-- Admin & Customer Support Tab -->
+          <!-- Admin & Support Tab -->
           <div id="admin" class="tab-content">
             <div class="tab-content-inner">
               <div class="tab-text">
                 <p>
-                  From office managers to customer service professionals, we'll
-                  bring you top candidates with in-demand skills and experience
-                  and help manage the hiring process for you.
+                  For offices and NGOs, we offer corps members trained in admin,
+                  communication, and clerical functions.
                 </p>
-
                 <div class="content-list">
-                  <h3>Trending job titles</h3>
+                  <h3>Available Corps Roles</h3>
                   <div class="content-list-items">
                     <div class="content-list-item">
-                      <a href="#">Administrative assistant</a>
-                    </div>
-                    <div class="content-list-item">
-                      <a href="#">Executive assistant</a>
-                    </div>
-                    <div class="content-list-item">
-                      <a href="#">Customer experience representative</a>
+                      <a href="#">Admin Assistant</a>
                     </div>
                     <div class="content-list-item">
                       <a href="#">Receptionist</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Office specialist</a>
+                      <a href="#">Communications Intern</a>
                     </div>
                     <div class="content-list-item">
-                      <a href="#">Data entry specialist</a>
+                      <a href="#">Data Entry Support</a>
                     </div>
                   </div>
                 </div>
-
-                <a href="#" class="cta-link"
-                  >More about our Admin and Customer Support hiring solutions</a
-                >
+                <a href="#" class="cta-link">Find corps for admin roles</a>
               </div>
-
               <div class="tab-image">
                 <img
                   src="https://s7d9.scene7.com/is/image/roberthalfintl/rt2-futureforwardtech-2287651199-0624?$Rectangle2-Large-1x$&fmt=webp-alpha"
-                  alt="Administrative professionals working"
+                  alt="Admin professionals"
                 />
               </div>
             </div>
@@ -557,7 +481,39 @@
       </div>
     </section>
 
-    <footer>&copy; 2025 JobMate, Inc. All rights reserved.</footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h3>JobMate</h3>
+          <p>
+            Connecting NYSC corps members to meaningful PPAs across Nigeria.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <h4>Platform</h4>
+            <ul>
+              <li><a href="/how-it-works.html">How It Works</a></li>
+              <li><a href="/about-us.html">About Us</a></li>
+              <li><a href="#">Jobs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 JobMate. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="app.js"></script>
   </body>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - NYSC PPA Helper</title>
+    <style>
+      :root {
+        --main-blue: #3b82f6;
+        --main-dark: rgba(23, 24, 28, 255);
+        --main-light: #ffffff;
+        --main-accent: #d6001c;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: var(--main-dark);
+        color: var(--main-light);
+        line-height: 1.7;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        transition: background-color 0.4s ease, box-shadow 0.3s ease;
+      }
+
+      .logo {
+        color: #3b82f6;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-size: 2.4rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        /* text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #3b82f6,
+    0 0 80px #3b82f6, 0 0 90px #3b82f6, 0 0 100px #3b82f6, 0 0 150px #3b82f6;
+  animation: flicker 3s infinite alternate; */
+      }
+
+      header.fixed {
+        position: fixed;
+        background-color: rgba(23, 24, 28, 1);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Nav base */
+      nav {
+        display: flex;
+        font-weight: 500;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        padding: 6px 8px;
+        border-radius: 4px;
+        user-select: none;
+      }
+      nav a:hover,
+      nav a:focus {
+        background-color: #6d6868;
+        outline: none;
+      }
+
+      /* Hamburger */
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 26px;
+        height: 20px;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+        z-index: 1100;
+      }
+      .hamburger div {
+        width: 100%;
+        height: 3px;
+        background-color: #3b82f6;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        transform-origin: center;
+      }
+
+      /* Hamburger active state: turn into X */
+      .hamburger.active div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      .hamburger.active div:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active div:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+
+      /* Show hamburger on small */
+      @media (max-width: 767px) {
+        .logo {
+          font-weight: 8600;
+          font-size: 1.5rem;
+        }
+        nav {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: white;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          height: 100vh;
+          padding: 80px 20px 20px 20px;
+          display: none;
+          z-index: 1050;
+          overflow-y: auto;
+          text-align: center;
+        }
+        nav.active {
+          display: flex;
+        }
+        nav a {
+          /* margin: 20px 0; */
+          padding: 10px 0;
+          font-size: 1.8rem;
+          color: #3b82f6 !important;
+          font-weight: 700;
+          border-radius: 0;
+        }
+        nav a:hover {
+          background: none;
+          outline: none;
+          text-decoration: underline;
+        }
+
+        .header-btn {
+          gap: 15px;
+          width: 100%;
+          margin-top: 12rem;
+          background-color: #3b82f6;
+          border-radius: 6px;
+          cursor: pointer;
+          color: #fff !important;
+        }
+
+        .header-btn:hover {
+          background-color: #0e0f0f3e;
+          outline: none;
+        }
+        .hamburger {
+          display: flex;
+          position: relative;
+          z-index: 1100;
+        }
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.8rem;
+        color: var(--main-blue);
+        margin-bottom: 30px;
+      }
+
+      .intro {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #d1d5db;
+        font-size: 1.05rem;
+      }
+
+      .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .team-member {
+        background-color: #1e1f24;
+        border-radius: 12px;
+        overflow: hidden;
+        width: 280px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .team-member:hover {
+        transform: translateY(-5px);
+      }
+
+      .team-member img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+      }
+
+      .team-member h3 {
+        margin: 15px 0 5px;
+        color: var(--main-light);
+        font-size: 1.2rem;
+      }
+
+      .team-member p {
+        color: #9ca3af;
+        font-size: 0.9rem;
+        padding: 0 10px 20px;
+      }
+
+      footer {
+        text-align: center;
+        color: #9ca3af;
+        padding: 30px 10px;
+        font-size: 0.85rem;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .team-member {
+          width: 100%;
+        }
+
+        .intro {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- <div class="logo">★ 🄹🄾🄱🄼🄰🅃🄴 ★</div> -->
+      <div class="logo"><a href="/index.html">JobMate</a></div>
+
+      <div
+        class="hamburger"
+        aria-label="Toggle menu"
+        role="button"
+        tabindex="0"
+      >
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <a href="jobs.html">Jobs</a>
+        <a href="about-us.html">About</a>
+        <a href="/how-it-works.html">How-it-Works</a>
+        <a href="#" class="header-btn">Login</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>About Us</h1>
+      <p class="intro">
+        We're a team of young Nigerians who believe in making the NYSC
+        experience easier and more meaningful. Our mission is to connect corps
+        members to places of primary assignment that match their skills,
+        passions, and future goals.
+      </p>
+
+      <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+          <img src="hajj_2.webp" alt="Corper 1" />
+          <h3>Chinwe E.</h3>
+          <p>Corper posted to Lagos with a passion for teaching and tech.</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-member">
+          <img src="hajj_2.webp" alt="Corper 2" />
+          <h3>Uche O.</h3>
+          <p>
+            Posted to Abuja, looking to serve in legal aid and public interest
+            work.
+          </p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-member">
+          <img src="/hajj_2.webp" alt="Corper 3" />
+          <h3>Kemi T.</h3>
+          <p>Health enthusiast and community organizer in Cross River State.</p>
+        </div>
+
+        <!-- Add more as needed -->
+      </div>
+
+      <footer>
+        &copy; 2025 NYSC PPA Helper. Built by corpers, for corpers.
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

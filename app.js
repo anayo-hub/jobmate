@@ -35,27 +35,17 @@ const navLinks = document.querySelectorAll("nav a");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
-    header.classList.add("fixed", "scrolled");
-    header.classList.remove("transparent");
-
-    logo.style.color = "#0d6efd"; // or a darker color on scroll if you prefer
-
+    header.classList.add("fixed");
+    logo.style.color = "#0d6efd";
     navLinks.forEach((link) => {
-      link.style.color = "#0d6efd"; // darker text on scroll
+      link.style.color = "white";
     });
-
-    document.body.style.paddingTop = `${header.offsetHeight}px`;
   } else {
-    header.classList.remove("fixed", "scrolled");
-    header.classList.add("transparent");
-
-    logo.style.color = "#0d6efd"; // light text at top
-
+    header.classList.remove("fixed");
+    logo.style.color = "#0d6efd";
     navLinks.forEach((link) => {
-      link.style.color = "#0d6efd";
+      link.style.color = "white";
     });
-
-    document.body.style.paddingTop = "0";
   }
 });
 

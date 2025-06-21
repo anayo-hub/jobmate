@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="job.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="jobs-page">
+      <section class="hero">
+        <h1>Find Your Ideal Corps Member</h1>
+        <p>Browse qualified NYSC members ready to serve in your organization</p>
+      </section>
+
+      <section class="search-filters">
+        <!-- Search by LGA, Skills, Field, etc. -->
+        <form id="search-form">
+          <input
+            type="text"
+            placeholder="Search by skill, location..."
+            name="query"
+          />
+          <select name="category">
+            <option value="">All Fields</option>
+            <option value="education">Education</option>
+            <option value="tech">Technology</option>
+            <option value="health">Health</option>
+            <option value="admin">Administration</option>
+          </select>
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      <section class="job-listings">
+        <!-- Repeat this block for each kopa -->
+        <div class="job-card">
+          <h2>Chinwe E.</h2>
+          <p><strong>Skill:</strong> HTML, CSS, Teaching</p>
+          <p><strong>Location:</strong> Lagos Mainland</p>
+          <p><strong>Field:</strong> Education</p>
+          <button>View Profile</button>
+        </div>
+
+        <div class="job-card">
+          <h2>Uche O.</h2>
+          <p><strong>Skill:</strong> Legal Drafting, Communication</p>
+          <p><strong>Location:</strong> Abuja Central</p>
+          <p><strong>Field:</strong> Law</p>
+          <button>View Profile</button>
+        </div>
+        <!-- More... -->
+      </section>
+    </main>
+  </body>
+</html>
